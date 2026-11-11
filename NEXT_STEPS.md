@@ -160,6 +160,45 @@ curl -sI https://luolab.org | head -1
 
 ---
 
+## Alternative route: Netlify (no GitHub account)
+
+If you want the site on a real URL today without the GitHub account, token and 2FA
+dance, use Netlify instead. `luolab-site.zip` in this folder is the deployable bundle
+(the six pages, 404, stylesheet, favicon and robots.txt — no git history, no internal
+notes).
+
+1. Go to <https://app.netlify.com/drop>
+2. Drag `luolab-site.zip` onto the page
+3. It is live in about thirty seconds at a random address like
+   `wandering-lumen-8f2a1c.netlify.app`
+
+**The catch, and it matters:** a site dropped anonymously is deleted if you do not
+*claim* it, and the claim window is short — reported as one hour. Claiming means
+signing up. So "no account" really means "no account for the first hour".
+
+The upside is that the Netlify signup is far lighter than GitHub's: an email address
+and a password, no mandatory two-factor, no personal access tokens, no CLI. Claim the
+site as soon as it is live and you are done.
+
+Once claimed you can:
+
+- rename the site to something sane (`luolab.netlify.app`) in **Site settings → Change
+  site name**
+- attach `luolab.org` under **Domain management → Add a domain**; Netlify issues the
+  HTTPS certificate automatically
+- redeploy by dragging a new zip onto the site's Deploys tab
+
+**What you give up versus GitHub:** version history, the ability to add lab members as
+editors, and a site that can be handed to a student in 2029 without handing over your
+password. Updating means regenerating and re-dragging a zip rather than editing a file
+in place. For a six-page site that changes a few times a year, that is a defensible
+trade — just know you are making it.
+
+You can move to GitHub later without redoing any of this work. The files are the same
+files, and `CNAME`/DNS is the only part that changes.
+
+---
+
 ## Why plain HTML and not Jekyll/Hugo/Astro
 
 For a six-page lab site edited a few times a quarter, a static-site generator costs
