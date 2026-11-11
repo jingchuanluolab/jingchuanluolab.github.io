@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Luo Lab</title>
+<meta name="description" content="How mRNAs are targeted to subcellular sites, why local translation matters, and how we map it with LOCL-TL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">Luo Lab</a>
+    <nav class="nav" aria-label="Main">
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="team.html">Team</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--primary btn--sm" href="join.html">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap section stack gap-72">
+
+  <section class="stack gap-20 measure">
+    <h1 class="page-title">Research</h1>
+    <h2 class="h3" style="color:var(--accent)">Central question</h2>
+    <p class="prose prose--lg">The Luo lab seeks to understand how cells generate and maintain compartmentalized structures to achieve functional specificity, with a particular focus on the spatiotemporal regulation of protein synthesis. By controlling where and when proteins are made, cells coordinate embryonic development, neuronal plasticity, organelle biogenesis, and stress responses, and disruption of this control contributes to developmental defects, neurodegeneration, and metabolic disease. Yet how cells decide where to translate individual mRNAs, and what this achieves, remains largely unknown except for a few special cellular contexts.</p>
+  </section>
+
+  <section class="split">
+    <div class="split__col">
+      <h2 class="h2">Models and challenges</h2>
+      <p class="prose">Eukaryotic cells organize biochemical activities into organelles and specialized regions, creating optimal reaction conditions and improving cellular efficiency. Establishing this organization requires cells to target proteins accurately to their designated locations and to arrange molecular components into functional assemblies. Classic targeting pathways rely on protein-coded localization signals. However, many proteins do not follow these rules. Roughly one-third of mitochondrial proteins lack a cleavable N-terminal mitochondrial targeting sequence (MTS). How these proteins reach the organelle is unclear.</p>
+      <p class="prose">Localized translation offers a non-canonical strategy. Here, mRNAs, rather than proteins, are targeted to specific subcellular sites and translated near their destination. This spatial positioning can couple protein synthesis to import or assembly, increase the local concentration of newly made proteins, and limit their exposure in the cytosol. Studies of localized translation have focused largely on the endoplasmic reticulum (ER) and neuronal synapses, and our knowledge of other compartments remains limited.</p>
+    </div>
+    <div class="ph ph--tall">[FIGURE: mRNA targeting to mitochondria without an MTS]</div>
+  </section>
+
+  <section class="stack gap-32">
+    <div class="stack gap-12 measure">
+      <h2 class="h2">Fundamental questions</h2>
+      <p class="prose">This raises several questions that organize our work.</p>
+    </div>
+
+    <div class="qa" id="mechanism">
+      <div class="qa__label">
+        <span class="qa__num">01</span>
+        <h3 class="qa__title">Mechanism</h3>
+      </div>
+      <p class="qa__body">How are mRNAs targeted to specific subcellular sites, before or during translation? Which mRNA sequences (&ldquo;zipcodes&rdquo;) and RNA-binding proteins direct them, and how is translation controlled once they arrive?</p>
+    </div>
+
+    <div class="qa" id="function">
+      <div class="qa__label">
+        <span class="qa__num">02</span>
+        <h3 class="qa__title">Function</h3>
+      </div>
+      <p class="qa__body">Why make proteins at specific locations rather than in the cytosol, and how does this change across cell types, under stress, and in disease?</p>
+    </div>
+
+    <div class="qa" id="diversity">
+      <div class="qa__label">
+        <span class="qa__num">03</span>
+        <h3 class="qa__title">Diversity and evolution</h3>
+      </div>
+      <p class="qa__body">Do different subcellular locations and different species use shared or distinct strategies to regulate local translation?</p>
+    </div>
+
+    <div class="qa" id="engineering">
+      <div class="qa__label">
+        <span class="qa__num">04</span>
+        <h3 class="qa__title">Engineering</h3>
+      </div>
+      <p class="qa__body">Can we harness this regulation to build synthetic organelles with new functions?</p>
+    </div>
+  </section>
+
+  <section class="split">
+    <div class="ph ph--tall">[FIGURE: LOCL-TL workflow, proximity biotinylation to ribosome footprint sequencing]</div>
+    <div class="split__col">
+      <h2 class="h2">Our approaches and goals</h2>
+      <p class="prose">Answering these questions starts with a gap in what we know: there is no systematic view of which transcripts are translated at any given subcellular location, largely because systematically monitoring translation at specific subcellular locations in a crowded cell is technically difficult. We have a long-standing interest in building new tools to answer questions like this, so we developed LOCL-TL, a proximity-biotinylation method that labels organelle-proximal ribosomes in living cells.</p>
+      <p class="prose">By purifying these ribosomes and sequencing their protected footprints, we can map locally translated transcripts under physiological conditions. LOCL-TL avoids organelle fractionation, which often suffers from cross-contamination, and can in principle be adapted to other compartments and to any genetically tractable organism. Because it reads out ribosome footprints, it also provides codon-level resolution, revealing at what point during translation ribosomes engage a given location.</p>
+    </div>
+  </section>
+
+  <section class="stack gap-20 measure">
+    <p class="prose">A map of locally translated transcripts is only a starting point. Beyond LOCL-TL, we continue to develop and apply state-of-the-art genome-wide technologies and combine them with functional screens, biochemistry, and fluorescence imaging. Together, these let us define how widespread localized translation is across subcellular compartments, dissect how transcripts and ribosomes are directed to specific sites, and determine what this localization contributes to cellular function. We also ask what happens when this organization breaks down: how misregulated local translation disrupts cellular homeostasis and contributes to disease.</p>
+    <blockquote class="pullquote">
+      <p>Our ultimate goal is to turn these principles into design rules: by harnessing spatiotemporal control of gene expression, we aim to engineer synthetic organelles with novel functionalities, with applications in biological production and therapeutic development.</p>
+    </blockquote>
+  </section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <div>&copy; 2027 Luo Lab &middot; Department of Cell Biology, Yale University</div>
+  <div><a href="mailto:[EMAIL]">[EMAIL]</a></div>
+</footer>
+
+</body>
+</html>
