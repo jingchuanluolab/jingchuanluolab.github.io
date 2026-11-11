@@ -65,9 +65,15 @@ Within a minute the site is live at `https://jingchuanluolab.github.io`.
 The browser device-code flow (`gh auth login --web`) is awkward from the cluster. Use a
 token instead:
 
-1. Create one at <https://github.com/settings/tokens/new?scopes=repo&description=luolab-website>
-   — classic token, scope **`repo`** only. That is enough to create the repo, push, and
-   switch on Pages.
+1. Create one at <https://github.com/settings/tokens/new?scopes=repo,read:org&description=luolab-website>
+   — classic token, scopes **`repo`** and **`read:org`**. `repo` does the real work
+   (create, push, Pages); `read:org` is required by the `gh` CLI itself at login time
+   and is checked even when you belong to no organisations. Omitting it fails with
+   `error validating token: missing required scope 'read:org'`.
+
+   Already made a token without it? You do not need a new one — go to
+   <https://github.com/settings/tokens>, click the token, tick `read:org`, and press
+   **Update token**. The value stays the same.
 2. Log in without the token touching disk or scrollback:
 
 ```bash
