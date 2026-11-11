@@ -2,6 +2,9 @@
 
 Static website for the Luo Lab, Department of Cell Biology, Yale University (founded 2027).
 
+**Live at <https://jingchuanluolab.github.io>** — deployed from `main` by GitHub Pages
+on every push. A custom domain (`luolab.org`) is not attached yet; see `NEXT_STEPS.md`.
+
 Built from the Claude Design canvas *"Luo Lab Website"*. Plain HTML + one CSS file —
 **no build step, no dependencies, no framework.** Edit a file, commit, push; GitHub Pages
 publishes it within a minute.
@@ -69,4 +72,18 @@ See `CONTENT-TODO.md` for the checklist.
 
 ## Deployment
 
-GitHub Pages, served from the `main` branch. See `NEXT_STEPS.md`.
+GitHub Pages, from the `main` branch of this repo. Push and it republishes — usually
+under a minute, occasionally a few. No build step and no Actions workflow: GitHub
+serves the files as they are, which is what the empty `.nojekyll` file guarantees.
+
+```bash
+git add -A
+git commit -m "Update publications"
+git push
+```
+
+To check a deploy landed:
+
+```bash
+curl -sI https://jingchuanluolab.github.io | head -1
+```
