@@ -8,7 +8,7 @@ filling in your content, putting it on GitHub, and pointing a domain at it.
 ## Step 0 — look at it first (2 minutes)
 
 ```bash
-cd /lab/solexa_weissman/jluo/Claude/lab_website && python3 -m http.server 8000
+cd path/to/lab_website && python3 -m http.server 8000
 ```
 
 Open <http://localhost:8000>, click through all six pages, resize the window down to
@@ -49,7 +49,7 @@ dedicated lab account rather than a personal one. The repo is named
 serve it at the root of the domain and keeps every link in the site simple.
 
 ```bash
-cd /lab/solexa_weissman/jluo/Claude/lab_website
+cd path/to/lab_website
 gh repo create jingchuanluolab/jingchuanluolab.github.io --public --source=. --remote=origin --push
 ```
 
