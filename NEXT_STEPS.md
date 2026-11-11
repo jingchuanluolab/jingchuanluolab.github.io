@@ -44,25 +44,25 @@ than getting it perfect.
 ## Step 2 — put it on GitHub
 
 **Recommendation: create a GitHub organisation for the lab, not a personal repo.**
-An org (`github.com/luolab`, say) means the website isn't tied to your personal
+An org (`github.com/jingchuanluolab`) means the website isn't tied to your personal
 account, you can add lab members as collaborators without giving them access to your
 own repos, and handing the site to a lab manager later is one click. It's free.
 
-Then name the repo `luolab.github.io` (org name + `.github.io`). That exact name makes
+Then name the repo `jingchuanluolab.github.io` (org name + `.github.io`). That exact name makes
 GitHub serve it at the root of the domain, which keeps every link in the site simple.
 
 ```bash
 cd /lab/solexa_weissman/jluo/Claude/lab_website
 git add -A
 git commit -m "Luo lab website: first pass from design"
-gh repo create luolab/luolab.github.io --public --source=. --remote=origin --push
+gh repo create jingchuanluolab/jingchuanluolab.github.io --public --source=. --remote=origin --push
 ```
 
 `gh` is already installed here. If it isn't authenticated yet, run `gh auth login`
 first and pick HTTPS + browser login.
 
 Then turn on Pages: **Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`**.
-Within a minute the site is live at `https://luolab.github.io`.
+Within a minute the site is live at `https://jingchuanluolab.github.io`.
 
 > The repo must be **public** for free GitHub Pages. That's fine — it's a public
 > website. Just don't commit anything you wouldn't put on the web (unpublished
@@ -117,7 +117,7 @@ In your registrar's DNS panel, on the apex (`@`, meaning `luolab.org` itself):
 | AAAA | @    | 2606:50c0:8001::153 |
 | AAAA | @    | 2606:50c0:8002::153 |
 | AAAA | @    | 2606:50c0:8003::153 |
-| CNAME | www | luolab.github.io |
+| CNAME | www | jingchuanluolab.github.io |
 
 On Cloudflare specifically: set each of these to **DNS only** (grey cloud), not
 proxied — the orange cloud interferes with GitHub issuing your certificate. You can

@@ -8,8 +8,9 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 - [ ] `[EMAIL]` — lab contact address. Appears in the footer of all 6 pages, plus
       team.html, join.html (×2), contact.html. One find-and-replace:
       `sed -i 's/\[EMAIL\]/you@yale.edu/g' *.html`
-- [ ] `[FIRST NAME] Luo, PhD` and `[TITLE]` — team.html
-- [ ] `Luo [INITIALS]` — publications.html, the bolded author name
+- [x] ~~`[FIRST NAME] Luo, PhD`~~ — now "Jingchuan Luo, PhD" (correct it if that is wrong)
+- [ ] `[TITLE]` — team.html, e.g. "Assistant Professor"
+- [x] ~~`Luo [INITIALS]`~~ — now "Luo J" in publications.html
 
 ## Home (index.html)
 
