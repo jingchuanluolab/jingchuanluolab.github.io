@@ -14,10 +14,11 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Home (index.html)
 
-- [ ] **Confirm you have the right to publish `assets/img/hero.jpg`.** It is a stock
-      photograph of Yale's Cross Campus that came in with the design. Unless you know
-      its licence, replace it with a photo you took, a Yale communications image you
-      have been cleared to use, or one from a stock library you've licensed.
+- [ ] **Photo credit for `assets/img/hero.jpg`.** The image comes from Yale's own
+      communications photo library, so the right to use it on a Yale-affiliated site
+      is not in question. What is still needed is the exact credit line they want,
+      in writing, and confirmation that it carries over to `luolab.org` when the
+      domain moves. Keep that email.
 - [ ] Re-read the headline and the intro paragraph once in context — they are the only
       prose on the page and they're carrying the whole first impression.
 
