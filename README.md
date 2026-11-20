@@ -1,6 +1,7 @@
 # Luo Lab website
 
-Static website for the Luo Lab, Department of Cell Biology, Yale University (founded 2027).
+Static website for the Luo Lab, Department of Cell Biology, Yale School of Medicine
+(founded 2027).
 
 **Live at <https://jingchuanluolab.github.io>** — deployed from `main` by GitHub Pages
 on every push. A custom domain (`luolab.org`) is not attached yet; see `NEXT_STEPS.md`.
@@ -12,14 +13,16 @@ publishes it within a minute.
 ## Files
 
 ```
-index.html           Home
+index.html           Home — full-bleed photo hero, intro paragraph, three buttons
 research.html        Research  (anchors: #mechanism #function #diversity #engineering)
 team.html            Team
 publications.html    Publications
-join.html            Join the lab
+news.html            News & Fun
+join.html            Join the lab  (reached from Team and Contact, not from the nav)
 contact.html         Contact
 404.html             Not-found page
 assets/css/style.css The whole stylesheet — all colours and type live in :root at the top
+assets/img/hero.jpg  Home-page hero photo (2000px wide, ~470 KB)
 assets/img/          Figures, portraits, favicon
 assets/pdf/          PDFs of papers, if you want to host them
 .nojekyll            Tells GitHub Pages to serve the files as-is
@@ -37,8 +40,18 @@ Then open <http://localhost:8000>. No install needed — `http.server` ships wit
 ## Editing
 
 **Change the colour scheme.** Edit `--accent` at the top of `assets/css/style.css`.
-The design ships four options: `#0B3C6F` navy (current), `#1B5E4B` green,
-`#7A1F2B` wine, `#2F3B52` slate. One line changes every page.
+The design ships four options: `#000066` deep navy (current), `#1B5E4B` green,
+`#7A1F2B` wine, `#2F3B52` slate. One line changes the header bar, every link, every
+button and every accent rule on all seven pages.
+
+**Replace the hero photo.** Drop a new image at `assets/img/hero.jpg` (landscape,
+~2000px wide, under about 500 KB). Nothing else needs changing. The text sits at the
+bottom centre over a soft dark gradient, so pick an image whose lower third is not
+busy. To nudge which part of the photo stays visible, change `background-position`
+on `.hero-photo` — `center 70%` means "70% of the way down".
+
+**Add a news item.** Copy one `<article class="news-item">…</article>` block in
+`news.html` and put it at the *top* of the list. Newest first.
 
 **Add a paper.** Copy a `<div class="pub">…</div>` block in `publications.html`
 and fill it in. Newest year first.
@@ -47,7 +60,7 @@ and fill it in. Newest year first.
 drop their photo in `assets/img/`, and point the `<img>` at it.
 
 **Replace a figure placeholder.** Each grey dashed box is
-`<div class="ph ph--hero">[HERO FIGURE: …]</div>`. Swap it for:
+`<div class="ph ph--tall">[FIGURE: …]</div>`. Swap it for:
 
 ```html
 <figure class="fig">
@@ -57,8 +70,8 @@ drop their photo in `assets/img/`, and point the `<img>` at it.
 ```
 
 **Add a page.** Copy `contact.html`, change the content, and add the link to the
-`<nav>` block in all six pages (the nav is duplicated per page — that's the one
-cost of having no build step).
+`<nav>` block in all eight files including `404.html` (the nav is duplicated per
+page — that's the one cost of having no build step).
 
 ## Placeholders still to fill
 

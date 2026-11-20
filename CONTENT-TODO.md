@@ -5,8 +5,8 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Blocking — nothing else should go live without these
 
-- [ ] `[EMAIL]` — lab contact address. Appears in the footer of all 6 pages, plus
-      team.html, join.html (×2), contact.html. One find-and-replace:
+- [ ] `[EMAIL]` — lab contact address. 22 occurrences: the footer of all 7 pages, plus
+      team.html, join.html (×3), contact.html. One find-and-replace:
       `sed -i 's/\[EMAIL\]/you@yale.edu/g' *.html`
 - [x] ~~`[FIRST NAME] Luo, PhD`~~ — now "Jingchuan Luo, PhD" (correct it if that is wrong)
 - [ ] `[TITLE]` — team.html, e.g. "Assistant Professor"
@@ -14,10 +14,12 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Home (index.html)
 
-- [ ] Three recent publications — `[PAPER TITLE]`, `[AUTHORS…]`, `[Journal]`, `[Year]`
-- [ ] `[HERO FIGURE: …]` — the one image that will define the site. A LOCL-TL schematic
-      or a striking micrograph. Worth commissioning or making properly.
-- [ ] Check the 2027 recruiting banner still reads right once you've started
+- [ ] **Confirm you have the right to publish `assets/img/hero.jpg`.** It is a stock
+      photograph of Yale's Cross Campus that came in with the design. Unless you know
+      its licence, replace it with a photo you took, a Yale communications image you
+      have been cleared to use, or one from a stock library you've licensed.
+- [ ] Re-read the headline and the intro paragraph once in context — they are the only
+      prose on the page and they're carrying the whole first impression.
 
 ## Research (research.html)
 
@@ -43,6 +45,13 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 - [ ] `[Theme tag]` is the short left-column label (e.g. "Method", "Mitochondria",
       "Translation") — decide on 3–5 tags and use them consistently
 
+## News & Fun (news.html)
+
+- [ ] Two placeholder items: `[DATE]`, `[NEWS HEADLINE]`, `[PHOTO]`, and the body line
+- [ ] A news page that hasn't been touched in two years looks worse than no news page.
+      Either commit to posting a few times a year, or drop it from the nav until the
+      lab is running and there's something to say.
+
 ## Join (join.html)
 
 - [ ] `[ADD A LINE ON LAB CULTURE AND MENTORING.]` — the part applicants actually read
@@ -62,7 +71,14 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Site-wide
 
-- [ ] Confirm "Department of Cell Biology" is the exact departmental name to use
+- [ ] The new design dropped **Join Us** from the navigation bar. The page still
+      exists and is linked from Team and Contact. While you're actively recruiting,
+      consider putting it back in the nav — it's the page prospective postdocs look
+      for first.
+- [ ] Confirm "Department of Cell Biology, Yale School of Medicine" is the exact
+      affiliation to use. The design uses "Yale School of Medicine" on the home and
+      news pages and "Yale University" elsewhere; the site now says School of
+      Medicine everywhere.
 - [ ] `© 2027` in the footer — change to the current year when you launch
 - [ ] Favicon (`assets/img/favicon.svg`) is a plain navy "L" — replace if you make a
       lab logo
