@@ -204,8 +204,8 @@ figure.fig { margin: 0; display: flex; flex-direction: column; gap: 10px; flex: 
 figure.fig figcaption { font-size: 14px; color: var(--muted); line-height: 1.5; }
 /* Drops a figure down so its top lines up with the first line of the body text
    beside it rather than with the heading. CSS treats 1in as exactly 96px, so
-   this is seven eighths of an inch on every screen. Change the number to nudge it. */
-figure.fig--drop { align-self: flex-start; margin-top: 0.875in; }
+   this is five eighths of an inch on every screen. Change the number to nudge it. */
+figure.fig--drop { align-self: flex-start; margin-top: 0.625in; }
 
 /* --- numbered question rows (research) ----------------------------------- */
 
