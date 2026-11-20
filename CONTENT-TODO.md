@@ -26,7 +26,10 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 - [x] ~~`[FIGURE: mRNA targeting to mitochondria without an MTS]`~~ — now the lab
       vision diagram (`assets/img/lab-vision.jpg`). Reword the caption if you want.
-- [ ] `[FIGURE: LOCL-TL workflow …]`
+- [x] ~~`[FIGURE: LOCL-TL workflow …]`~~ — now the figure from the Cell paper,
+      cited and linked to doi.org/10.1016/j.cell.2025.08.002. Check that Cell's
+      licence lets you reproduce your own figure on a lab site; for most journals
+      authors retain that right, but it is worth a glance at the agreement.
 - [ ] Prose is already written from your design — re-read it once for anything that
       changed since you drafted it
 

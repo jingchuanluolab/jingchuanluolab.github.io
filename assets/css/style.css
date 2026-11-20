@@ -208,6 +208,13 @@ figure.fig figcaption { font-size: 14px; color: var(--muted); line-height: 1.5; 
    the paragraph beside it. Change the number to nudge it. */
 figure.fig--drop { align-self: flex-start; margin-top: 0.7in; }
 
+/* A tall figure that body text wraps around. flow-root makes the container hold
+   the float, so the next section starts below the picture instead of colliding
+   with it. */
+.wrap-figure { display: flow-root; }
+.wrap-figure p + p { margin-top: 20px; }
+figure.fig--float { float: left; width: 300px; margin: 6px 32px 18px 0; }
+
 /* --- numbered question rows (research) ----------------------------------- */
 
 .qa { display: flex; flex-wrap: wrap; gap: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
@@ -311,6 +318,8 @@ figure.fig--drop { align-self: flex-start; margin-top: 0.7in; }
    stray gap rather than an alignment. */
 @media (max-width: 900px) {
   figure.fig--drop { margin-top: 0; }
+  /* Too narrow to wrap text around a portrait figure; let it run full width. */
+  figure.fig--float { float: none; width: 100%; max-width: 420px; margin: 0 0 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
