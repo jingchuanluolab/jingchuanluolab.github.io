@@ -303,8 +303,13 @@ figure.fig--drop { align-self: flex-start; margin-top: 1.25in; }
   .pub__tag { flex-basis: 100%; padding-top: 0; }
   .member { max-width: none; }
   .ph--tall { height: 280px; }
-  figure.fig--drop { margin-top: 0; }   /* the columns stack, so the offset would just be a gap */
   .ph--news { flex-basis: 100%; height: 220px; }
+}
+
+/* Below this width .split wraps to a single column, where the drop would be a
+   stray gap rather than an alignment. */
+@media (max-width: 900px) {
+  figure.fig--drop { margin-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
