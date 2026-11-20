@@ -9,7 +9,7 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
       team.html, join.html (×3), contact.html. One find-and-replace:
       `sed -i 's/\[EMAIL\]/you@yale.edu/g' *.html`
 - [x] ~~`[FIRST NAME] Luo, PhD`~~ — now "Jingchuan Luo, PhD" (correct it if that is wrong)
-- [ ] `[TITLE]` — team.html, e.g. "Assistant Professor"
+- [x] ~~`[TITLE]`~~ — now "Assistant Professor"
 - [x] ~~`Luo [INITIALS]`~~ — now "Luo J" in publications.html
 
 ## Home (index.html)
@@ -35,7 +35,7 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Team (team.html)
 
-- [ ] `[PORTRAIT]` — your photo
+- [x] ~~`[PORTRAIT]`~~ — added
 - [ ] `[SHORT BIO: …]` — 3–5 sentences
 - [ ] Replace the three "Your name here" cards as people join (leave them up while
       recruiting — they read as openings, which is the point)
