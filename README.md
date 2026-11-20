@@ -95,6 +95,19 @@ git commit -m "Update publications"
 git push
 ```
 
+### When you change the stylesheet
+
+GitHub serves every file with `cache-control: max-age=600`, so a browser can keep
+showing an old `style.css` for ten minutes even after a hard reload of the page.
+To force it, bump the number in the `<link>` tag on every page:
+
+```bash
+sed -i 's/style\.css?v=[0-9]*/style.css?v=8/' *.html
+```
+
+The query string changes the URL, so no cache can match the old copy. Do this
+whenever a CSS change needs to be visible immediately.
+
 To check a deploy landed:
 
 ```bash
