@@ -5,9 +5,7 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Blocking — nothing else should go live without these
 
-- [ ] `[EMAIL]` — lab contact address. 22 occurrences: the footer of all 7 pages, plus
-      team.html, join.html (×3), contact.html. One find-and-replace:
-      `sed -i 's/\[EMAIL\]/you@yale.edu/g' *.html`
+- [x] ~~`[EMAIL]`~~ — now jingchuan.luo@yale.edu across all 7 pages (11 mailto links)
 - [x] ~~`[FIRST NAME] Luo, PhD`~~ — now "Jingchuan Luo, PhD" (correct it if that is wrong)
 - [x] ~~`[TITLE]`~~ — now "Assistant Professor"
 - [x] ~~`Luo [INITIALS]`~~ — now "Luo J" in publications.html
