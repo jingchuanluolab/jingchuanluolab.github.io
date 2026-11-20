@@ -202,6 +202,10 @@ h1, h2, h3 { font-family: var(--font-sans); font-weight: 600; margin: 0; line-he
 
 figure.fig { margin: 0; display: flex; flex-direction: column; gap: 10px; flex: 1 1 360px; min-width: 0; }
 figure.fig figcaption { font-size: 14px; color: var(--muted); line-height: 1.5; }
+/* Drops a figure down so its top lines up with the first line of the body text
+   beside it rather than with the heading. CSS treats 1in as exactly 96px, so
+   this is half an inch on every screen. Change the number to nudge it. */
+.fig--drop { align-self: flex-start; margin-top: 0.5in; }
 
 /* --- numbered question rows (research) ----------------------------------- */
 
@@ -299,6 +303,7 @@ figure.fig figcaption { font-size: 14px; color: var(--muted); line-height: 1.5; 
   .pub__tag { flex-basis: 100%; padding-top: 0; }
   .member { max-width: none; }
   .ph--tall { height: 280px; }
+  .fig--drop { margin-top: 0; }   /* the columns stack, so the offset would just be a gap */
   .ph--news { flex-basis: 100%; height: 220px; }
 }
 
