@@ -5,7 +5,9 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Blocking — nothing else should go live without these
 
-- [x] ~~`[EMAIL]`~~ — now jingchuan.luo@yale.edu across all 7 pages (11 mailto links)
+- [x] ~~`[EMAIL]`~~ — jingchuan.luo@yale.edu, shown **only on the Team page**. Page
+      footers, Join and Contact link to Team instead of printing it. If you later want
+      it back everywhere, it is one find-and-replace.
 - [x] ~~`[FIRST NAME] Luo, PhD`~~ — now "Jingchuan Luo, PhD" (correct it if that is wrong)
 - [x] ~~`[TITLE]`~~ — now "Assistant Professor"
 - [x] ~~`Luo [INITIALS]`~~ — now "Luo J" in publications.html
