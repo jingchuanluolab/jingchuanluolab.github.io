@@ -23,7 +23,8 @@ Find them all at any time: `grep -rno '\[[A-Z][^]]*\]' *.html`
 
 ## Research (research.html)
 
-- [ ] `[FIGURE: mRNA targeting to mitochondria without an MTS]`
+- [x] ~~`[FIGURE: mRNA targeting to mitochondria without an MTS]`~~ — now the lab
+      vision diagram (`assets/img/lab-vision.jpg`). Reword the caption if you want.
 - [ ] `[FIGURE: LOCL-TL workflow …]`
 - [ ] Prose is already written from your design — re-read it once for anything that
       changed since you drafted it
